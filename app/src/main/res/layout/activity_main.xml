@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:paddingVertical="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:fontFamily="@font/josefin_sans_medium"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/t_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank Cards"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/i_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_add"/>
+
+    <TextView
+        android:id="@+id/t_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="298"
+        android:textSize="24sp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/t_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/t_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/t_balance"
+        app:layout_constraintBottom_toBottomOf="@+id/t_balance"
+        android:text="USD"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/t_balanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_balance"
+        android:text="BALANCE"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/josefin_sans_semi_bold"
+        android:textColor="@color/teal_700"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/t_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06/21"
+        android:textSize="24sp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/t_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/t_expires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/t_date"
+        app:layout_constraintTop_toBottomOf="@+id/t_date"
+        android:text="EXPIRES"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/josefin_sans_semi_bold"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:id="@+id/t_cvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="324"
+        android:textSize="24sp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/t_expires"
+        app:layout_constraintLeft_toLeftOf="@+id/t_date"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/t_cvcTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/t_cvc"
+        app:layout_constraintTop_toBottomOf="@+id/t_cvc"
+        android:text="CVC"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/josefin_sans_semi_bold"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:id="@+id/t_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khonok Lee"
+        android:textSize="24sp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/t_balanceTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="40dp" />
+
+    <TextView
+        android:id="@+id/t_cardHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_holder"
+        android:text="CARD HOLDER"
+        android:fontFamily="@font/josefin_sans_semi_bold"
+        android:textSize="16sp"
+        android:textColor="@color/teal_700"
+        android:layout_marginLeft="40dp"/>
+
+
+    <ImageView
+        android:id="@+id/i_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/card2"
+        android:visibility="invisible"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/t_cardHolder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
